@@ -1,7 +1,8 @@
+// header数据
 export const headerLinks = [
   {
     title: '发现音乐',
-    path: '/',
+    path: '/discover',
   },
   {
     title: '我的音乐',
@@ -25,6 +26,7 @@ export const headerLinks = [
   },
 ];
 
+// footer数据
 export const footerLinks = [
   {
     title: '服务条款',
@@ -68,5 +70,33 @@ export const footerImages = [
   {
     title: '视频奖励',
     link: 'https://web-amped.music.163.com/',
+  },
+];
+
+// discover页面
+export const discoverMenu = [
+  {
+    title: '推荐',
+    link: '/discover',
+  },
+  {
+    title: '排行榜',
+    link: '/discover/ranking',
+  },
+  {
+    title: '歌单',
+    link: '/discover/playlist',
+  },
+  {
+    title: '主播电台',
+    link: '/discover/djradio',
+  },
+  {
+    title: '歌手',
+    link: '/discover/artist',
+  },
+  {
+    title: '新碟上架',
+    link: '/discover/album',
   },
 ];

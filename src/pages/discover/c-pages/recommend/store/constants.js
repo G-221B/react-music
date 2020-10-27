@@ -1,0 +1,1 @@
+export const CHANGE_TOP_BANNERS = 'GG_CHANGE_TOP_BANNERS';

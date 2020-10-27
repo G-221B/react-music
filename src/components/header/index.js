@@ -14,11 +14,7 @@ export default memo(function GGHeader() {
   const selectLink = (item, index) => {
     if (index < 3) {
       return (
-        <NavLink
-          exact={true}
-          to={item.path}
-          activeClassName='header-link-active'
-        >
+        <NavLink to={item.path} activeClassName='header-link-active'>
           {item.title}
         </NavLink>
       );

@@ -100,3 +100,27 @@ export const discoverMenu = [
     link: '/discover/album',
   },
 ];
+
+// 热门推荐的list
+export const hot_nav_list = [
+  {
+    title: '华语',
+    link: '/#',
+  },
+  {
+    title: '流行',
+    link: '/#',
+  },
+  {
+    title: '摇滚',
+    link: '/#',
+  },
+  {
+    title: '民谣',
+    link: '/#',
+  },
+  {
+    title: '电子',
+    link: '/#',
+  },
+];

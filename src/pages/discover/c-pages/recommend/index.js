@@ -1,23 +1,39 @@
 import React, { memo, useEffect } from 'react';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 
-import { getTopBanners } from './store/actionCreators';
+import { getTopBannersAction } from './store/actionCreators';
+import {
+  RecommendWrapper,
+  Content,
+  RecommendLeft,
+  RecommendRight,
+} from './style';
+import GGTopBanner from './c-cpns/top-banner';
+import GGHotRecommend from './c-cpns/hot-recommend';
+import GGNewAlbum from './c-cpns/new-album';
 
 export default memo(function GGRecommend() {
   const dispatch = useDispatch();
   const { banners } = useSelector(
     (state) => ({
-      banners: state.recommend.banners,
+      banners: state.getIn(['recommend', 'banners']),
     }),
     shallowEqual
   );
   useEffect(() => {
-    dispatch(getTopBanners());
+    dispatch(getTopBannersAction());
   }, [dispatch]);
   return (
-    <div>
-      <h2>GGRecommend: {banners.length}</h2>
-    </div>
+    <RecommendWrapper>
+      <GGTopBanner banners={banners} />
+      <Content className='wrap-v2'>
+        <RecommendLeft>
+          <GGHotRecommend />
+          <GGNewAlbum />
+        </RecommendLeft>
+        <RecommendRight></RecommendRight>
+      </Content>
+    </RecommendWrapper>
   );
 });
 

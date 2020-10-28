@@ -8,6 +8,7 @@ import GGRanking from '@/pages/discover/c-pages/ranking';
 import GGPlaylist from '@/pages/discover/c-pages/playlist';
 import GGDjradio from '@/pages/discover/c-pages/djradio';
 import GGAlbum from '@/pages/discover/c-pages/album';
+import GGArtist from '@/pages/discover/c-pages/artist';
 const routes = [
   {
     path: '/',
@@ -35,6 +36,10 @@ const routes = [
       },
       {
         path: '/discover/artist',
+        component: GGArtist,
+      },
+      {
+        path: '/discover/djradio',
         component: GGDjradio,
       },
       {

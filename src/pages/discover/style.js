@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const DiscoverWrapper = styled.div`
-  background-color: #c20c0c;
-  height: 30px;
+  .nav-box {
+    background-color: #c20c0c;
+  }
 `;
 
 export const TopNav = styled.div`

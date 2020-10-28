@@ -27,10 +27,15 @@ export const LeftWrapper = styled.div`
       position: relative;
       a {
         display: inline-block;
-        padding: 27px 19px;
+        padding: 0 19px;
+        line-height: 70px;
         box-sizing: border-box;
         color: #cccccc;
         text-decoration: none;
+      }
+      a:hover {
+        color: #fff;
+        background-color: #000000;
       }
       .header-link-active {
         color: #fff;

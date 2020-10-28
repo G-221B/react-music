@@ -9,21 +9,23 @@ import { renderRoutes } from 'react-router-config';
 export default memo(function GGDiscover(props) {
   return (
     <DiscoverWrapper>
-      <div className='wrap-v1'>
-        <TopNav>
-          {discoverMenu.map((item) => {
-            return (
-              <NavLink
-                to={item.link}
-                key={item.title}
-                className='list-item'
-                exact={true}
-              >
-                <span>{item.title}</span>
-              </NavLink>
-            );
-          })}
-        </TopNav>
+      <div className='nav-box'>
+        <div className='wrap-v1'>
+          <TopNav>
+            {discoverMenu.map((item) => {
+              return (
+                <NavLink
+                  to={item.link}
+                  key={item.title}
+                  className='list-item'
+                  exact={true}
+                >
+                  <span>{item.title}</span>
+                </NavLink>
+              );
+            })}
+          </TopNav>
+        </div>
       </div>
       <Switch>{renderRoutes(props.route.routes)}</Switch>
     </DiscoverWrapper>

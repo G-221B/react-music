@@ -125,7 +125,12 @@ button {
 .sprite_table {
   background: url(../img/sprite_table.png) no-repeat 0 9999px;
 }
-
+.banner_go_left {
+  background: url(../img/left.png) no-repeat 0 9999px;
+}
+.banner_go_right {
+  background: url(../img/right.png) no-repeat 0 9999px;
+}
 .image_cover {
   position: absolute;
   left: 0;
@@ -134,4 +139,7 @@ button {
   bottom: 0;
   text-indent: -9999px;
   background: url(../img/sprite_cover.png) no-repeat -145px -57px;
+}
+.sprite_cover {
+  background: url(../img//cover.png) no-repeat 0 9999px;
 }

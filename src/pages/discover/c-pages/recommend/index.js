@@ -11,6 +11,9 @@ import {
 import GGTopBanner from './c-cpns/top-banner';
 import GGHotRecommend from './c-cpns/hot-recommend';
 import GGNewAlbum from './c-cpns/new-album';
+import GGRecommendRanking from './c-cpns/recommend-ranking';
+import GGUserLogin from './c-cpns/user-login';
+import GGSetterSinger from './c-cpns/setter-singer';
 
 export default memo(function GGRecommend() {
   const dispatch = useDispatch();
@@ -30,8 +33,12 @@ export default memo(function GGRecommend() {
         <RecommendLeft>
           <GGHotRecommend />
           <GGNewAlbum />
+          <GGRecommendRanking />
         </RecommendLeft>
-        <RecommendRight></RecommendRight>
+        <RecommendRight>
+          <GGUserLogin />
+          <GGSetterSinger />
+        </RecommendRight>
       </Content>
     </RecommendWrapper>
   );

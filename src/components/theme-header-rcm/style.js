@@ -6,6 +6,7 @@ export const ThemeHeaderRcmWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   height: 35px;
+  margin-top: 30px;
   line-height: 35px;
   border-bottom: 2px solid #c20c0c;
   .theme-left {

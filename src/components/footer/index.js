@@ -7,7 +7,7 @@ import { FooterWarpper } from './style';
 export default memo(function GGFooter() {
   return (
     <FooterWarpper>
-      <div className='box wrap-v1'>
+      <div className='box wrap-v2'>
         <div className='box-left'>
           <div className='music-link'>
             {footerLinks.map((item) => {

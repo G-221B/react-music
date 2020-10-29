@@ -6,10 +6,12 @@ export const Content = styled.div`
   background-color: #fff;
 `;
 export const RecommendLeft = styled.div`
-  width: 726px;
-  padding: 20px 20px 40px;
+  width: 728px;
+  padding: 0px 20px 40px;
   box-sizing: border-box;
 `;
 export const RecommendRight = styled.div`
-  width: 254px;
+  width: 252px;
+  border: 1px solid #d3d3d3;
+  border-bottom: none;
 `;

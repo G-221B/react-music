@@ -6,12 +6,11 @@ export const HotRecommendWrapper = styled.div`
     justify-content: space-between;
     padding: 0 10px;
     box-sizing: border-box;
-    margin-top: 3px;
     flex-wrap: wrap;
     .recommend-item {
       position: relative;
       width: 140px;
-      margin-top: 24px;
+      margin-top: 20px;
       .item-detail {
         font-size: 14px;
         color: black;

@@ -11,3 +11,19 @@ export const getHotRecommends = () => {
     },
   });
 };
+export const getNewAlbums = () => {
+  return request({
+    url: '/top/album',
+    params: {
+      limit: 10,
+    },
+  });
+};
+export const getTopList = (idx) => {
+  return request({
+    url: '/top/list',
+    params: {
+      idx,
+    },
+  });
+};

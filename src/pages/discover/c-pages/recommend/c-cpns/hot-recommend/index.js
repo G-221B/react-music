@@ -1,14 +1,14 @@
 import React, { memo, useEffect, useMemo } from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 
-import { getCount } from '@/utils/format_utils';
+import { getCount, getSizeImage } from '@/utils/format_utils';
 
 import GGThemeHeaderRcm from '@/components/theme-header-rcm';
 import { HotRecommendWrapper } from './style';
 import { hot_nav_list } from '@/common/local-data';
 import { getHotRecommendsAction } from '../../store/actionCreators';
 export default memo(function GGHotRecommend() {
-  const { hot_recommends } = useSelector(
+  const { hot_recommends = [] } = useSelector(
     (state) => ({
       hot_recommends: state.getIn(['recommend', 'hot_recommends']),
     }),
@@ -27,9 +27,9 @@ export default memo(function GGHotRecommend() {
           return (
             <div className='recommend-item' key={item.id}>
               <div className='item-top'>
-                <img src={item.picUrl + '?param=140y140'} alt=' ' />
+                <img src={getSizeImage(item.picUrl, 140)} alt=' ' />
               </div>
-              <a href='#/' className='item-detail'>
+              <a href='#/' className='item-detail '>
                 {item.name}
               </a>
               <div className='over sprite_cover'>

@@ -143,3 +143,6 @@ button {
 .sprite_cover {
   background: url(../img//cover.png) no-repeat 0 9999px;
 }
+.sprite_playerbar {
+  background: url(../img/playbar.png) no-repeat 0 9999px;
+}

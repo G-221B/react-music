@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import footer_sprite from '@/assets/img/foot_sprite.png';
 
 export const FooterWarpper = styled.div`
-  height: 153px;
+  height: 193px;
   padding-top: 20px;
   border-top: 1px solid #d3d3d3;
   background-color: #f2f2f2;

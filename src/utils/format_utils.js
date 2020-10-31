@@ -12,3 +12,30 @@ export const getCount = (count) => {
 export const getSizeImage = (url, size) => {
   return `${url}?param=${size}y${size}`;
 };
+
+export const formatDate = (time, fmt) => {
+  const date = new Date(time);
+  if (/(y+)/.test(fmt)) {
+    fmt = fmt.replace(
+      RegExp.$1,
+      (date.getFullYear() + '').substr(4 - RegExp.$1.length)
+    );
+  }
+  const obj = {
+    'M+': date.getMonth() + 1,
+    'd+': date.getDate(),
+    'h+': date.getHours(),
+    'm+': date.getMinutes(),
+    's+': date.getSeconds(),
+  };
+  for (let key in obj) {
+    if (new RegExp(`(${key})`).test(fmt)) {
+      fmt = fmt.replace(RegExp.$1, (obj[key] + '').padStart(2, '0'));
+    }
+  }
+  return fmt;
+};
+
+export function getPlaySong(id) {
+  return `https://music.163.com/song/media/outer/url?id=${id}.mp3`;
+}

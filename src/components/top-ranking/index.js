@@ -7,7 +7,6 @@ import { getSizeImage } from '@/utils/format_utils';
 export default memo(function GGTopRanking(props) {
   const { info } = props;
   const { tracks = [] } = info;
-  console.log(info);
   return (
     <TopRankingWrapper>
       <div className='header'>

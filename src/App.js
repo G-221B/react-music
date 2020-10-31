@@ -8,6 +8,7 @@ import store from '@/store';
 
 import GGHeader from '@/components/header';
 import GGFooter from '@/components/footer';
+import GGAppPlayerBar from '@/pages/player/app-player-bar';
 
 export default memo(function App() {
   return (
@@ -16,6 +17,7 @@ export default memo(function App() {
         <GGHeader></GGHeader>
         <Switch>{renderRoutes(routes)}</Switch>
         <GGFooter></GGFooter>
+        <GGAppPlayerBar />
       </HashRouter>
     </Provider>
   );
